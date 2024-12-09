@@ -26,7 +26,6 @@
 
         function checkForCorrectness () {
             if (inputBox.value.toLowerCase() === countries[number].toLowerCase()) {
-                console.log("Correct: " + countries[number]);
                 score+=1;
                 scoreBox.innerText="Score: " + score + "/196";
                 inputBox.value = "";
@@ -35,9 +34,6 @@
                     win();
                 }
                 changeImage();
-            }
-            else {
-                console.log("Incorrect: " + countries[number]);
             }
         }
         
